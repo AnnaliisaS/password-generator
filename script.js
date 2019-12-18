@@ -29,6 +29,8 @@ if(userInput>=8 && userInput<=128 && userInput !== NaN) {
                 password += s;
             }
         }
+        //this makes the chosen password characters appear in a more random order.
+        password = password.split('').sort(function(){return 0.5-Math.random()}).join('');
         console.log(password);
         console.log(password.length);
         return password;
