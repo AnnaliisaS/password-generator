@@ -10,3 +10,10 @@ let up = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 let numeric = '0123456789';
 let spec = '!@#$%^&*()_+~`|}{[]\:;?><,./-=';
 let password = '';
+
+let userInput= prompt('Select a minimum password length between 8 and 128: ');
+if(userInput>=8 && userInput<=128 && userInput !== NaN) {
+    passGen();
+} else {
+        prompt('That number is not valid.');
+    }
