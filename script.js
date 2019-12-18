@@ -3,7 +3,7 @@ buttongen.addEventListener('click', function () {
     document.getElementById('password').removeAttribute(
         'Readonly'  //now allows text to be written to the field after the generate password button is clicked.
         )
-        passGen();
+        document.getElementById('password').textContent = passGen();
 });
 
 function passGen() {
