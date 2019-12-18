@@ -4,3 +4,9 @@ buttongen.addEventListener('click', function () {
         'Readonly'  //now allows text to be written to the field after the generate password button is clicked.
         )
 });
+
+let low = 'abcdefghijklmnopqrstuvwxyz'; 
+let up = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+let numeric = '0123456789';
+let spec = '!@#$%^&*()_+~`|}{[]\:;?><,./-=';
+let password = '';
