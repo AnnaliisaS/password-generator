@@ -20,12 +20,12 @@ h1 {
     padding: 1%;
 }
 
-
 h2 {
     border-bottom: solid 1px lightgray;
+    margin-left: 2%;
 }
 
-#wrapper {
+.container {
     min-width: fit-content;
 }
 
@@ -38,5 +38,9 @@ textarea {
 
 #generate {
     background-color: lightgreen;
+}
 
+button {
+    margin-right: 1.5%;
+    padding: 1%;
 }
