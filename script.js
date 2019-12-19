@@ -1,4 +1,4 @@
-
+//not exactly D.R.Y., but it's FUNCTIONAL!!!!!
 //password generator function
 function passGen() { 
 let userInput= prompt('Select a minimum password length between 8 and 128: ');
@@ -38,13 +38,14 @@ if(userInput>=8 && userInput<=128 && userInput !== NaN) {
         alert('That was not a valid input! Please try again.');
     }}
 
-
 //added event listener to allow click of generate button to trigger the genPass function
 document.getElementById('generate').addEventListener('click', function () {
     //now allows text to be written to the field after the generate password button is clicked.
-    document.getElementById('password').removeAttribute('Readonly')
+    document.getElementById('password').removeAttribute('Readonly');
     //this allows the output of genPass function to be output to the password field in the form.    
     document.getElementById('password').textContent = passGen();
+    //If anyone could tell me how to get rid of the "[Violation] 'click' handler took ---ms" that 
+    //pops up in the console log, would be greatly appreciated!
 });
 
    
